@@ -6,6 +6,8 @@
     <dependencies>
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14460.19.1"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
         <!--Absterbaction View Controller-->
@@ -14,7 +16,178 @@
                 <pageViewController autoresizesArchivedViewToFullSize="NO" transitionStyle="pageCurl" navigationOrientation="horizontal" spineLocation="min" id="Odv-Yr-m06" customClass="AbsterbactionViewController" customModule="Absterbaction" customModuleProvider="target" sceneMemberID="viewController"/>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="LnW-5j-J8R" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="114" y="-96"/>
+            <point key="canvasLocation" x="191" y="-431"/>
+        </scene>
+        <!--Gate logic-->
+        <scene sceneID="Lsz-Po-3Ix">
+            <objects>
+                <viewController storyboardIdentifier="ByteController" title="Gate logic" id="JT2-Qc-y6U" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="oBw-Do-WV9">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" image="gates" translatesAutoresizingMaskIntoConstraints="NO" id="p24-SF-s86">
+                                <rect key="frame" x="0.0" y="161" width="375" height="128"/>
+                                <color key="backgroundColor" red="0.16833306347150256" green="0.043259637766297564" blue="0.028450344305579196" alpha="0.91353983274647887" colorSpace="custom" customColorSpace="sRGB"/>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="9df-RN-6Uq">
+                                <rect key="frame" x="0.0" y="369" width="375" height="57"/>
+                                <string key="text">logic gates are booleans but like made of circuits
+</string>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" red="0.8250080958549223" green="0.21201747681012642" blue="0.13943644758735355" alpha="0.899262764084507" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="9df-RN-6Uq" firstAttribute="centerX" secondItem="Ors-ac-loj" secondAttribute="centerX" id="NjQ-PH-fa7"/>
+                            <constraint firstItem="p24-SF-s86" firstAttribute="centerX" secondItem="Ors-ac-loj" secondAttribute="centerX" id="btk-hB-0tb"/>
+                            <constraint firstItem="9df-RN-6Uq" firstAttribute="width" secondItem="oBw-Do-WV9" secondAttribute="width" id="nQj-Im-r1d"/>
+                            <constraint firstItem="p24-SF-s86" firstAttribute="width" secondItem="oBw-Do-WV9" secondAttribute="width" id="yDS-B8-8dN"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="Ors-ac-loj"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="iCj-4Y-gQk" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1788" y="287"/>
+        </scene>
+        <!--Block code-->
+        <scene sceneID="NrI-aV-Wjm">
+            <objects>
+                <viewController storyboardIdentifier="BlockController" title="Block code" id="BSG-Fz-tID" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="6fE-WU-8gy">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" image="block" translatesAutoresizingMaskIntoConstraints="NO" id="Oet-uZ-eq3">
+                                <rect key="frame" x="0.0" y="160" width="375" height="128"/>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="wi9-wD-gTC">
+                                <rect key="frame" x="0.0" y="364" width="375" height="57"/>
+                                <string key="text">block code is like one of those escape games where you find random crap and have to figure out where the dump it goes but you can’t ever find it</string>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" red="0.49262712271083259" green="0.32851666137822261" blue="0.83901392487046633" alpha="0.90000000000000002" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="Oet-uZ-eq3" firstAttribute="width" secondItem="6fE-WU-8gy" secondAttribute="width" id="ARW-MM-fSU"/>
+                            <constraint firstItem="wi9-wD-gTC" firstAttribute="centerX" secondItem="i7q-hK-zLz" secondAttribute="centerX" id="S5J-Rx-Bxf"/>
+                            <constraint firstItem="wi9-wD-gTC" firstAttribute="width" secondItem="6fE-WU-8gy" secondAttribute="width" id="fzJ-7m-qHQ"/>
+                            <constraint firstItem="Oet-uZ-eq3" firstAttribute="centerX" secondItem="i7q-hK-zLz" secondAttribute="centerX" id="h3m-LO-kmk"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="i7q-hK-zLz"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Cp7-4C-mpS" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1788" y="-431.33433283358323"/>
+        </scene>
+        <!--Binary code-->
+        <scene sceneID="d9O-3d-wty">
+            <objects>
+                <viewController storyboardIdentifier="BinaryController" title="Binary code" id="hH3-5E-RM5" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="1ca-fq-MJm">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" image="binary" translatesAutoresizingMaskIntoConstraints="NO" id="bCp-AE-311">
+                                <rect key="frame" x="0.0" y="163" width="375" height="128"/>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" text="Binary is like regular numbers but made of exponents because computers" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Ssl-Jw-Pmc">
+                                <rect key="frame" x="0.0" y="370" width="375" height="57"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" red="0.73621668009564145" green="0.32947395115290085" blue="0.78934585492227982" alpha="0.90008802816901412" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="bCp-AE-311" firstAttribute="width" secondItem="1ca-fq-MJm" secondAttribute="width" id="0EZ-pQ-5Ee"/>
+                            <constraint firstItem="Ssl-Jw-Pmc" firstAttribute="width" secondItem="1ca-fq-MJm" secondAttribute="width" id="0FO-pS-2uJ"/>
+                            <constraint firstItem="Ssl-Jw-Pmc" firstAttribute="centerX" secondItem="Y1R-XD-eRC" secondAttribute="centerX" id="dUK-vl-Zcm"/>
+                            <constraint firstItem="bCp-AE-311" firstAttribute="centerX" secondItem="Y1R-XD-eRC" secondAttribute="centerX" id="kPw-g1-mmc"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="Y1R-XD-eRC"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="OYg-XP-jDS" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="190" y="287"/>
+        </scene>
+        <!--Byte code-->
+        <scene sceneID="0uD-ZX-eOb">
+            <objects>
+                <viewController storyboardIdentifier="ByteController" title="Byte code" id="Cu8-if-3bk" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="P2W-cQ-Ho5">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" image="byte code" translatesAutoresizingMaskIntoConstraints="NO" id="XDS-3c-PAp">
+                                <rect key="frame" x="0.0" y="163" width="375" height="128"/>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" text="bytecode is the cyber hacker stuff code turns into when you compile it or something" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="bCj-un-1tC">
+                                <rect key="frame" x="0.0" y="370" width="375" height="57"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" red="0.85403173575129532" green="0.24928648390044192" blue="0.50904554053155149" alpha="0.89714458626760563" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="XDS-3c-PAp" firstAttribute="width" secondItem="P2W-cQ-Ho5" secondAttribute="width" id="4zo-Ze-ToA"/>
+                            <constraint firstItem="bCj-un-1tC" firstAttribute="centerX" secondItem="qiV-WM-cjt" secondAttribute="centerX" id="567-dV-7Kf"/>
+                            <constraint firstItem="XDS-3c-PAp" firstAttribute="centerX" secondItem="qiV-WM-cjt" secondAttribute="centerX" id="adC-pB-aq5"/>
+                            <constraint firstItem="bCj-un-1tC" firstAttribute="width" secondItem="P2W-cQ-Ho5" secondAttribute="width" id="yQn-Xe-iPL"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="qiV-WM-cjt"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="KCX-oM-waN" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="990" y="287"/>
+        </scene>
+        <!--Swift-->
+        <scene sceneID="OTQ-a7-94C">
+            <objects>
+                <viewController storyboardIdentifier="SwiftController" title="Swift code" id="ihJ-tA-Fqb" userLabel="Swift" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="qbE-4U-X0y">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" image="swift code" translatesAutoresizingMaskIntoConstraints="NO" id="mzg-zb-Mbd">
+                                <rect key="frame" x="0.0" y="162" width="375" height="128"/>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" text="swift is basically the dark souls of java" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="yUH-Tm-5LN">
+                                <rect key="frame" x="0.0" y="363" width="375" height="57"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" red="0.36679732593126352" green="0.50468492564949818" blue="0.83573510362694303" alpha="0.8960717429577465" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="mzg-zb-Mbd" firstAttribute="width" secondItem="qbE-4U-X0y" secondAttribute="width" id="88E-vi-MFI"/>
+                            <constraint firstItem="yUH-Tm-5LN" firstAttribute="width" secondItem="qbE-4U-X0y" secondAttribute="width" id="kNd-T6-92u"/>
+                            <constraint firstItem="yUH-Tm-5LN" firstAttribute="centerX" secondItem="UWn-Bj-zef" secondAttribute="centerX" id="t42-dD-jze"/>
+                            <constraint firstItem="mzg-zb-Mbd" firstAttribute="centerX" secondItem="UWn-Bj-zef" secondAttribute="centerX" id="vts-P8-8P9"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="UWn-Bj-zef"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="C7l-fG-vzK" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="989.60000000000002" y="-431.33433283358323"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="binary" width="3840" height="2160"/>
+        <image name="block" width="850" height="384"/>
+        <image name="byte code" width="721" height="346"/>
+        <image name="gates" width="539" height="328"/>
+        <image name="swift code" width="383" height="699"/>
+    </resources>
 </document>
